@@ -1,17 +1,15 @@
-# Exponentiation operator  (**)
-print(3**6)
+# Variables
 
-# Modulus operator 
-print(51 % 7)
+# assigning a value to a variable
+a = 50
+print(a)
+b = 23
+print(a + b)
 
-# // Integer division 
-print(26//5)
+# overwriting the variable 'a
+a = a - b 
+print(a)
 
-# / is division
-print(23 / 5)
 
-# Addition
-print(2+7)
 
-# Subtraction
-print(9-5)
+

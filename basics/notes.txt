@@ -16,3 +16,43 @@ This division gives floating point number .
 * Multiplication 
 + addition
 - subtraction 
+
+DATA TYPES 
+The most common data types in python are 
+1. integer (int) - Whole numbers without fractions . 
+ex : 10 , -3 , 0 .
+
+2. floating-point number (floats) - Represents numbers decimal points .
+ex : 3.14 , -0.01 . 
+
+3. string (str) - Represents a sequence of characters written inside quotes (either single , double , triple etc) . 
+                - It can include letters , numbers , symbols and spaces . 
+ex : 'a' , 'Hello' , " Mother's day " , '5' , '1 cat ' etc. 
+                -  A string with no characters in it ('') is called a blank string or an empty string . 
+                  
+STRING CONCATENATION AND REPLICATION 
+- '+' operator is used to combine 2 string values .
+- '+' is the concatenation operator . 
+- '*' is used to to multiply one string value with one integer value . 
+- '*' is the string replication operator .
+
+VARIABLES
+- A variable is like a box in the computer memory where you can store data and manipulate it (change) .
+
+OVERWRITING THE VARIABLE
+- A variable is created the first time a value is stored in it .
+- When a variable is assigned a new value , the old value is forgetton , this is called " OVERWRITING THE VARIABLE " . 
+
+VARIABLE NAMES 
+- RULES
+1. It can't have space . ex: current balance (instead of space we use an underscore)
+2. It can use only letters , numbers , and the underscore (_) . 
+ex : current_balance , account2 , etc .
+3. It can't begin with a number . 
+ex : 42 (instead we can use _42 )
+4. It can't be a python keyword , such as if , for , return , or other keywords in python .
+5. In python it is a convention to start variable with a lowercase letter.
+
+COMMENTS
+- When # is put infront of a line it is ignored by python , and can be used to write notes .
+ex : # This program says hello and asks for my name . 
