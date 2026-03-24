@@ -6,14 +6,18 @@
 ### 1. Exponentiation ( ** ) 
  x**y , this means x raised to the power of y . 
  Example: `print(5**2)`
+ Output : `25`
 
 ### 2. Modulus/remainder ( % ) 
  x % y , this gives the remainder when x is divided by y .
  Example: `print(10 % 3)`
+ Output : `1`
 
 ### 3. Integer division ( // ) 
 Integer division is same as the regular division but the result is rounded down .
 Example: `print(9 // 2)`
+Output : `4`
+* Since we are using rounding down which means moving towards the smaller number .
 
 ### 4. Division ( / ) 
 This division gives floating point number .  
@@ -39,7 +43,11 @@ ex : 3.5
 * Represents a sequence of characters written inside quotes (either single , double , triple etc) . 
 - It can include letters , numbers , symbols and spaces . 
 Example: `name = "Hello"`
+- THE len() function , is used to evaluate the number of characters in that string .
+Example : `print(len('hello'))`
+Output : `5`
 
+---
  ### Finding data types
 * Use `type()` to find the data type.
 Example : `print(type("3"))`
@@ -55,6 +63,22 @@ Output : `HiHello`
 - '*' is the string replication operator.
 Example : `print("Hi" * 3)`
 Output : `HiHiHi`
+## THE str(), int(), float() functions 
+- To concatenate an integer with string , you will have to change the integer to a string using str()
+
+1. Example : 
+```python
+x = 13 , y = '12'
+print(str(x) + y)
+```
+Output : `1312`
+
+2. Example : 
+```python 
+print(x + int(y))
+```
+Output : `25`
+
 ---
 ## VARIABLES
 - A variable is like a box in the computer memory where you can store data and manipulate it (change) .
@@ -111,3 +135,22 @@ Example :
 ```python
 # print("Hello")
 ```
+### COMMENTING OUT CODE 
+- Sometimes we put a hash mark(#) in front of a line of code to temporarily remove it while testing a program . 
+---
+## THE print() FUNCTION 
+- The print() function displays the stirng value inside the parantheses on the screen : 
+Example : 
+```python
+print('Hello, World!')
+```
+Output : `Hello, World!`
+- A value that is passed to a function call is an argument. 
+* (In the above example 'Hello, World!' is the argument passed to the print() function.)
+---
+## TEXT AND NUMBER EQUIVALANCE 
+- Example : `23 == '23'`
+Output : `False`
+- Example : `23 == 23.000`
+Output : `True`
+- This is because strings are text , while integers and floats are numbers . 
