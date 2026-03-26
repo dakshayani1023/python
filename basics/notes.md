@@ -1,6 +1,8 @@
 * Use backticks (`) to represent code (variables, functions, examples).
 * Use code blocks (```python) for multi-line code.
 
+# CHAPTER ONE 
+---
 ## MATH OPERATORS IN PYTHON 
 ---
 ### 1. Exponentiation ( ** ) 
@@ -46,7 +48,7 @@ Example: `name = "Hello"`
 - THE len() function , is used to evaluate the number of characters in that string .
 Example : `print(len('hello'))`
 Output : `5`
-
+- Integer, floating point and string aren't the only data types in python . 
 ---
  ### Finding data types
 * Use `type()` to find the data type.
@@ -154,3 +156,36 @@ Output : `False`
 - Example : `23 == 23.000`
 Output : `True`
 - This is because strings are text , while integers and floats are numbers . 
+---
+## THE type() FUNCTION 
+- Use type() function to determine what type they are . 
+Example : 
+`print(type('forty two'))`
+Output : ` <class 'str'>
+
+---
+## THE round() and abs() FUNCTION
+- These python functions are like the len()function, take an argument and return a value. 
+### 1. The round() function
+- Accepts a float value and returns the nearest integer . 
+Example : `print(round(-2.23))`
+Output : -2
+
+- For numbers that end with .5 the number is rounded to the nearest even integer.(" This is called banker's rounding ")
+Example : `print(round(6.5))`
+Output : `6`
+
+### The abs() function
+- Returns the absolute value (distance from 0 on a number line) of a number. 
+- It converts negative numbers to positive and leaves positive numbers and zero unchanged.
+Example : `print(abs(-1.59))`
+Output : `1.59`
+Example : `print(abs(23))`
+Output : `23` 
+
+---
+## EXPRESSION
+- An expression is a combination of values and operators. All expressions evaluate (that is, reduce) to a single value.
+
+## Difference between statement and expression
+- An expression evaluates to a single value. A statement does not.
