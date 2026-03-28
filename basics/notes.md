@@ -189,3 +189,158 @@ Output : `23`
 
 ## Difference between statement and expression
 - An expression evaluates to a single value. A statement does not.
+
+---
+# ----------------------CHAPTER-2----------------------------
+## BOOLEAN VALUES 
+- Boolean data type has only two values:True and False .
+- Boolean values can be stored in variables.
+Example :
+```python
+light = True 
+print(light)
+```
+Output: `True`
+- We cannot use True and False for variable names.
+
+---
+## COMPARISION OPERATORS
+- They are also called relational operators.
+- They compare two values and evaluate down to a single Boolean value.(either True or False)
+## OPERATORS 
+1. Equal to(==):
+2. Not equal to(!=): 
+3. Less than(<): 
+4. Greater than(>): 
+5. Less than or equal to(<=):
+6. Greater than or equal to(>=)
+- We often use comparision operators to compare a variable's value to some other value.
+Example : 
+``` python
+my_age = 18
+print(my_age > 20)
+```
+Output : `False`
+
+--- 
+## NOTE:THE DIFFERENCE BETWEEN THE == AND = OPERATORS
+- The == (equal to) operator asks whether two values are the same as each other.
+- The = (assignment) operator puts the value on the right into the variable on the left.
+
+---
+## BOOLEAN OPERATORS 
+- The 3 Boolean operators(and, or, and not) operate on Boolean values(or expressions that result in Boolean values).
+---
+## 1.and OPERATOR
+- The and operator always takes 2 Boolean values(or expressions), so it is considered as a binary Boolean operator. 
+   * It evaluates an expression to True if both values are true otherwise, it evaluates to False.
+### THE and OPERATOR'S TRUTH TABLE
+- True and True   -> True
+- True and False  -> False
+- False and False -> False
+- False and True  -> False
+--- 
+## 2. or OPERATOR
+- This is also a binary Boolean operator.
+- This operator evaluates the value to True if either of the Boolean values is True.
+### THE or OPERATOR'S TRUTH TABLE
+- True or True   -> True
+- True or False  -> True
+- False or True  -> True
+- False or False -> False
+---
+## 3. not OPERATOR 
+- The not operator evaluates to the opposite Boolean value .
+- The operator operates on only one Boolean value, so it is a unary operator.
+### THE not OPERATOR'S TRUTH TABLE
+- not True  -> False 
+- not False -> True 
+---
+## MIXING BOOLEAN AND COMPARISION OPERATORS 
+- Since comparision operators evaluate to Boolean values, you can use them in expressions with Boolean operators.
+Example : 
+```python
+x,y,z = 12,14,15
+print(x < y and y > z)
+```
+Output : `False`
+
+- The computer will evaluate the left expression first, then it will evaluate the right expression.(x < y is evaluated first then y > z is evaluated in the above example.)
+- ` The order of evaluating the Boolean operators is not operators first, then the and operators, and then the or operators.`
+Example : 
+``` python
+spam = 6
+print(3 + 3 == spam and not 3 + 3 == spam + 1)
+```
+Output : `True`
+Explanation : Here not 3 + 3 == spam + 1 means "Is it True that (3+3) is not equal to (spam+1) and the Boolean value on the either sides of and is True the final output is True.
+
+---
+## COMPONENTS OF FLOW CONTROL
+- Flow control statements start with a part called the condition and are followed by block of code called the clause.
+
+### CONDITIONS
+- Conditions are similar to expressions since a condition always evaluates to a Boolean value(True or False)
+- Almost every flow control statement uses a condition.
+
+### BLOCKS OF CODE
+- Lines of python code grouped together in blocks.
+- Based on the indentation(means 4 spaces or a tab) of the lines of code, you can tell when a block begins and ends.
+### FOUR RULES FOR BLOCKS: 
+1. A new block begins when the indentation increases.
+Example :
+```python
+if True:
+   print("Hello")
+```
+- In the above example if True: -> starts a block
+and the indented line(print)  -> belongs inside that block.
+
+2. Blocks can contain other blocks
+Example: 
+```python
+if True:               # ground floor
+   print("Level 1")    # first floor
+   if True:            # first floor
+      print("Level 2") # second floor
+```
+- Here first if  -> outer block or the first block
+       second if -> inside the first block      
+       
+3. A block ends when indentation decreases.
+Example:
+```python
+if True:
+   print("my_name")
+print("my_age")
+```
+- Here print("my_name") -> inside if
+       print("my_age")  -> indentation decreased → block already ended → now outside
+
+4. Python expects a block after a colon(:)
+- That means whenever we write a statement ending with : python expets an indented block next.(common statements if,for, while etc)
+Example:
+```python
+if True:
+   print("Hello")
+```
+---
+
+### NOTE
+1. The line with : (like if True:) → starts a block
+2. Indented lines → inside that block
+3. When indentation goes back to 0 → block ends
+4. Now you are outside the block
+5. If you want another block → you must start it again with :
+EXAMPLE FOR THE ABOVE STEPS:
+```python
+if True:                # block starts
+    print("A")          # inside block
+
+print("B")              # block ended (back to 0)
+
+if True:                # new block starts again
+    print("C")
+```
+
+---
