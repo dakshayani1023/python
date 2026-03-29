@@ -1,5 +1,5 @@
 * Use backticks (`) to represent code (variables, functions, examples).
-* Use code blocks (```python) for multi-line code.
+* Use code blocks (```python``` ) for multi-line code.
 
 # CHAPTER ONE 
 ---
@@ -114,20 +114,22 @@ ex : 42 is wrong , _42 is right
 - Variables can start with underscore . eg: _43
 4. Cannot use python keywords . (like if , for , return)
 5. In python it is a convention to start variable with a lowercase letter.
-6. Python is case sensitive , meaning it treats uppercase and lowercase letters as different.
+---
+### NOTE 
+- Python is case sensitive , meaning it treats uppercase and lowercase letters as different.
 Example : 
 ```python
 age = 15
-Age = 20
+aGe = 20
 print(age)
-print(Age)
+print(aGe)
 ```
 Output : 
 ```python
 15
 20
 ```
-* `age` and `Age` are different variables . 
+* `age` and `aGe` are different variables . 
 
 ---
 ## COMMENTS
@@ -151,9 +153,9 @@ Output : `Hello, World!`
 * (In the above example 'Hello, World!' is the argument passed to the print() function.)
 ---
 ## TEXT AND NUMBER EQUIVALANCE 
-- Example : `23 == '23'`
+- Example : `print(23 == '23')`
 Output : `False`
-- Example : `23 == 23.000`
+- Example : `print(23 == 23.000)`
 Output : `True`
 - This is because strings are text , while integers and floats are numbers . 
 ---
@@ -266,7 +268,8 @@ print(x < y and y > z)
 Output : `False`
 
 - The computer will evaluate the left expression first, then it will evaluate the right expression.(x < y is evaluated first then y > z is evaluated in the above example.)
-- ` The order of evaluating the Boolean operators is not operators first, then the and operators, and then the or operators.`
+- ` The order of evaluating the Boolean operators is: 1. not operators, 2. and operators, 3. or operators
+
 Example : 
 ``` python
 spam = 6
@@ -315,7 +318,7 @@ if True:
 print("my_age")
 ```
 - Here print("my_name") -> inside if
-       print("my_age")  -> indentation decreased → block already ended → now outside
+       print("my_age")  -> indentation decreased → block already ended → now outside and will execute regardless of the statement(since it is outside the block.)
 
 4. Python expects a block after a colon(:)
 - That means whenever we write a statement ending with : python expets an indented block next.(common statements if,for, while etc)
@@ -367,19 +370,19 @@ Output : `Hi, Addison`
 ---
 ### 2. else statement
 - The else clause is executed only when the if statement is False.
-- Anelse statement always consists of :
+- An else statement always consists of :
 1. The else keyword
 2. A colon
 3. Starting the next line after the condition with an indented block of code(called the else clause or else block)
 Example: 
 ```python
-name = 'Emma'
+name = 'Chloe'
 if name == 'Emma':
    print('Hi, Emma')
 else:
    print('Hello, stranger')
 ```
-Output : `Hi, Emma`
+Output : `Hello, stranger`
 
 ---
 ### 3. elif statement (else if)
@@ -422,6 +425,9 @@ Output : `Unlike you, Alice is not an undead, immortal vampire.`
 - A quick rule:
 1. When using >(greater than), start with the highest number and work your way down.
 2. When using <(less than), start with the lowest number and work your way down.
+ 
+#              CHAPTER-3 (LOOPS)
+
 
 
 
