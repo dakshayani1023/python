@@ -19,6 +19,7 @@
 Integer division is same as the regular division but the result is rounded down .
 Example: `print(9 // 2)`
 Output : `4`
+* This is also called 'Floor Division'.
 * Since we are using rounding down which means moving towards the smaller number .
 
 ### 4. Division ( / ) 
@@ -29,6 +30,7 @@ Example: `print(7 / 2)`
 `*` -> Multiplication 
 `+` -> addition
 `-` -> subtraction 
+
 ---
 ## DATA TYPES
 * The most common data types in python are 
@@ -70,7 +72,7 @@ Output : `HiHiHi`
 
 1. Example : 
 ```python
-x = 13 , y = '12'
+x , y = 13 , '12' 
 print(str(x) + y)
 ```
 Output : `1312`
@@ -107,7 +109,7 @@ Output : `15`
 ### VARIABLE NAMES (Rules)
 1. Cannot contain spaces .
 Example : current balance (instead of space we use an underscore)
-2. It can use only letters , numbers, and the underscore . 
+2. It can use only letters , numbers. 
 ex : current_balance , account2 , etc .
 3. It cannot start with a number . 
 ex : 42 is wrong , _42 is right 
@@ -143,7 +145,7 @@ Example :
 - Sometimes we put a hash mark(#) in front of a line of code to temporarily remove it while testing a program . 
 ---
 ## THE print() FUNCTION 
-- The print() function displays the stirng value inside the parantheses on the screen : 
+- The print() function displays the string value inside the parentheses on the screen : 
 Example : 
 ```python
 print('Hello, World!')
@@ -230,7 +232,7 @@ Output : `False`
 - The = (assignment) operator puts the value on the right into the variable on the left.
 
 ---
-## BOOLEAN OPERATORS 
+## BOOLEAN OPERATORS or LOGICAL OPERATORS
 - The 3 Boolean operators(and, or, and not) operate on Boolean values(or expressions that result in Boolean values).
 ---
 ## 1.and OPERATOR
@@ -338,7 +340,7 @@ if True:
 EXAMPLE FOR THE ABOVE STEPS:
 ```python
 if True:                # block starts
-    print("A")          # inside block
+    print("A")          # inside that block
 
 print("B")              # block ended (back to 0)
 
@@ -362,7 +364,7 @@ if True:                # new block starts again
 Example : 
 ```python
 name = 'Addison'
-if name == 'Addison'
+if name == 'Addison':
    print('Hi, Addison.')
 ```
 Output : `Hi, Addison`
@@ -370,6 +372,7 @@ Output : `Hi, Addison`
 ---
 ### 2. else statement
 - The else clause is executed only when the if statement is False.
+- else statement never has a condition.
 - An else statement always consists of :
 1. The else keyword
 2. A colon

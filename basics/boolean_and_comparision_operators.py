@@ -51,6 +51,5 @@ x,y = 7,8
 print(x == y or y == y) # Output : True
 print(x == y and y == y) # Output : False
 
-# MIXING BOOLEAN AND COMPARISION OPERATORS
 spam = 6
 print(3 + 3 == spam and not 3 + 3 == spam + 1) # Output : True
