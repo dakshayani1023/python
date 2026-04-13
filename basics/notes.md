@@ -429,10 +429,39 @@ Output : `Unlike you, Alice is not an undead, immortal vampire.`
 1. When using >(greater than), start with the highest number and work your way down.
 2. When using <(less than), start with the lowest number and work your way down.
  
-#              CHAPTER-3 (LOOPS)
+#  ------------------- CHAPTER-3 (LOOPS) ----------- 
+- Python has 2 kinds of loops, 'while' and 'for'. 
+## 1. while Loop Statements 
+- A block of code is executed over and over again using a while loop statement. 
+- The code in a while clause is executed as long as the statement's condition is True.
 
+## HOW while LOOP WORKS (IMPORTANT)
+* A while loop runs as long as the condition is True.
+* The loop does NOT run everything at once.
+* It runs step-by-step (line by line) for each iteration.
+## EXECUTION FLOW
+For every iteration:
+1. Check the condition
+2. If True → enter the loop
+3. Execute all lines inside the loop from top to bottom
+4. Go back and check the condition again
 
+## Loop Control Variable 
+- A variable used in the condition controls when the loop stops.
+- It must be updated inside the loop.
+- If not updated --> infinite loop (loop runs forever)
+Example for while loop: 
+```python
+z = 1 
+while z < 7: 
+   print(z)
+   z = z + 1
+``` 
+Output : 1
+         2
+         3
+         4
+         5
+         6
 
-
-
-
+## 

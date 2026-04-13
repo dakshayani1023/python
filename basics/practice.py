@@ -121,6 +121,13 @@ if number > 0:
 print(True or False and False) # Output: True, because 'and' is evaluated before 'or'
 print((True or False) and False) # Output: False, because the parentheses change the order of evaluation
 
+print(True or False and not False and False) # Output: True, because 'not' is evaluated first, then 'and', and finally 'or'
+# Step-by-step evaluation:
+# 1. not False -> True
+# 2. False and True -> False
+# 3. False and False -> False
+# 4. True or False -> True
+
 
 # -------------------CODING CHALLENGE (write a program for age classifier)---
 age = 18 
