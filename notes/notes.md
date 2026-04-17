@@ -502,3 +502,17 @@ while True:
 ```
 Output: Hi! My name is Leah. 
 
+
+## NOTE
+### TRAPPED IN AN INFINITE LOOP?
+- If you ever run a program that has bug causing it to get stuck in an infinite loop, press ctrl-c; this will send a keyboardInterrupt error to your program and cause it to stop immediately. 
+Example: 
+```python
+while True:
+   print("Hello, world!")
+```
+Output: The above line of code will keep printing Hello, world! until you press ctrl-c.
+
+
+## continue Statements 
+- When the program execution reaches a continue statement, it jumps back to the start of the loop and reevaluates the loop's condition. 

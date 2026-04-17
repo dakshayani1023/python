@@ -16,11 +16,24 @@ while name != "your name":
     print("Please type your name.")
     name = input()
 print("Thank you!") # Un-indented, so it is not part of the while loop and will only be executed once the loop has terminated i.e, once the condition becomes false.
+# In this code, the while loop will continue to prompt the user to "Please type your name." until the user types "your name". Once the user types "your name", the condition name != "your name" becomes false, and the loop terminates. After the loop has terminated, it will print "Thank you!".
 
 # break statement
 while True: # This creates an infinite loop because the condition is always true.
-    print("Please type your name.")
+    print("Please enter your name.")
     name = input()
-    if name == "your name":
-        break # This will exit the loop when the user types "your name".
-print("Thank you!") # This will be executed after the loop is exited, which happens when the user types "your name".
+    if name == "Ellie":
+        break # This will exit the loop when the user types "Ellie".
+print("Thank you!") # This will be executed after the loop is exited, which happens when the user types "Ellie".
+
+# continue statement
+while True:
+    print("Who are you?")
+    name = input()
+    if name != "Raya":
+        continue # This will skip the rest of the loop and start the next iteration if the user does not type "Raya".
+    print("Hello, Raya. What is the password? (It is a bird.)")
+    password = input()
+    if password == "Falcon":
+        break # This will exit the loop when the user types "Falcon" as the password.
+print("Access granted.") # This will be executed after the loop is exited, which happens when the user types "Raya" as the name and "Falcon" as the password.
