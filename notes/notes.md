@@ -530,7 +530,6 @@ while not name:
 ```
 Explanation: 
 name = ''
-
 - An empty string ('') is considered False in Python.
 
 - Condition:
@@ -544,4 +543,10 @@ not False → True
 
 - The program prints "Enter your name" and waits for user input.
 
+---
 
+## for Loops and the range() Function
+- To execute a block of code certain no.of times we use a for loop statement and the range() function.
+
+### NOTE:
+- We can only use continue and break statements inside while and for loops only.
