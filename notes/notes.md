@@ -444,7 +444,7 @@ For every iteration:
 1. Check the condition
 2. If True → enter the loop
 3. Execute all lines inside the loop from top to bottom
-4. Go back and check the condition again
+4. Go back and check the condition again.
 
 ## Loop Control Variable 
 - A variable used in the condition controls when the loop stops.
@@ -550,3 +550,25 @@ not False → True
 
 ### NOTE:
 - We can only use continue and break statements inside while and for loops only.
+
+## An Equivalent while Loop
+- We can actually use a while loop to do the same thing as a for loop.(for loops are just more concise.)
+Example: 
+```python
+print('Hello!')
+i = 0
+while i < 3:
+   print('On this iteration, i is set to ' + str(i))
+   i = i + 1 
+print('Goodbye!')
+```
+
+## Arguments to range()
+- Some functions can be called with multiple arguments seperated by a comma and range is one of them.
+- The range() function can be interpreted differently depending on whether you pass one, two, or three arguments.
+--> range(stop), range(start, stop), range(start, stop, step) (simialr to slicing)
+
+## Importing Modules
+- It is the process of bringing in code from external files(modules) to use in your current program.
+- Module: It is a python program that contains a related group of functions.
+

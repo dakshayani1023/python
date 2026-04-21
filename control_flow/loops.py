@@ -1,4 +1,5 @@
 # ------------ Control flow with loops ------------
+"""
 spam = 0
 if spam < 5: 
     print("I am sleepy")
@@ -59,6 +60,7 @@ print(bool(''))  # This will print False because an empty string is considered a
 print(bool(0))   # This will print False because the integer 0 is considered a falsy value in Python.
 
 # ------------ for Loops and the range() function ------------
+
 print("Hello!")
 for i in range(7):
     print('On this iteration, i is set to ' + str(i))
@@ -70,3 +72,36 @@ total = 0
 for i in range(101):
     total = total + i
 print(total)
+
+# ------------ An Equivalent while loop ------------
+
+print('Hello')
+i = 0 
+while i < 5:
+    print('On this iteration, i is set to ' + str(i))
+    i = i + 1 
+print('Goodbye')
+"""
+# ------------ Arguments to range() --------------
+
+for i in range(7, 11): 
+    print(i)
+"""
+Output: 
+7
+8
+9
+10
+"""
+
+for i in range(5, -1, -1):
+    print(i)
+"""
+Output:
+5 
+4
+3
+2
+1
+0
+"""
