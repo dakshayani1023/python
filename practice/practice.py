@@ -151,3 +151,95 @@ elif num % 5 == 0:
 else:
     print(num)
 # Output: Fizz, because 21 is divisible by 3 but not by 5.
+
+## ------------------- CHAPTER-3 -------------------
+
+# ----------- Understanding loops ------------
+
+i = 0          # Q-1
+while i < 3: 
+    print(i)
+    i = i + 1 
+"""
+Output :
+0
+1
+2
+"""
+# Prints the old value of i before updating.
+
+i = 0            # Q-2 
+while i < 3:
+    i = i + 1 
+    print(i)
+"""
+Output:
+1
+2
+3
+"""
+# Prints the new(updated) value of i after increment. 
+# The order of statements inside the loop affects the output.
+
+i = 0             # Q-3(infinite loop)
+while i < 3:
+    print(i)
+# The loop keeps running forever and repeatedly prints 0, since the variable is never updated and the condtion i < 3 always remains True as i stays 0. 
+
+# -------------- break and continue ----------
+
+for i in range(5): # Q-4
+    if i == 3:
+        break
+    print(i)
+# break statement exits the loop and stops further iterations completely.
+
+for i in range(5):  # Q-5
+    if i == 3:
+        continue
+    print(i)
+# When encountered continue statement skips the current iteration and moves to next iteration without executing the remaining code in the loop. 
+# break ends the loop entirely, while continue only skips one iteration 
+
+# ------------ range() understanding ----------
+
+for i in range(2, 6): # Q-6
+    print(i)
+
+for i in range(1, 10, 3): # Q-7
+    print(i)
+"""
+range(start, stop, step)
+start : The number from which the loop begins.
+stop : The number at which the loop stops(not included)
+step : The increment between the values
+"""
+
+# -------------- Truthy / Falsey --------------
+
+if "":            # Q-8
+    print("A")
+else:
+    print("B")
+
+print(bool(" "))   # Q-9
+print(bool(""))
+
+"""
+Note:
+In python some values are considered False in conditions(Falsey values):
+Falsey values: 0, 0.0, an empty string, None
+- All the other values are considere True(Truthy values)
+"""
+
+# ------------- Convert for loop into a while loop ----------
+
+for i in range(3):  # Q-10
+    print(i)
+"""
+Equivalent while loop 
+i = 0
+while i < 3:
+    print(i)
+    i = i + 1
+"""

@@ -519,7 +519,7 @@ Output: The above line of code will keep printing Hello, world! until you press 
 
 ## TRUTHY and FALSEY values and the BOOL() function
 - When used in conditions 0, 0.0, ''(empty string without a space), [](empty list),None are considered False.
-- All the other values (ex: ' ', any integer, "",etc) are considered True.
+- All the other values (ex: ' ', any integer, " ",etc) are considered True.
 
 Example: 
 ```python
