@@ -490,8 +490,8 @@ print("Hi Audrey!, Nice to meet you.")
 Explanation:
 1. Since we already used while true, the loop will never stop on it's own.
 2. The break is the only way out.
-3. If name == "Audery" is False. Python ignores the break and goes back to the top of the loop to ask the question again.
-4. If name == "Audery" is True. Python hits the break, jumps out of the loop immediately and prints the "Nice to meet you."message.
+3. If name == "Audrey" is False. Python ignores the break and goes back to the top of the loop to ask the question again.
+4. If name == "Audrey" is True. Python hits the break, jumps out of the loop immediately and prints the "Nice to meet you."message.
 
 Example:
 ```python
@@ -551,6 +551,8 @@ not False → True
 ### NOTE:
 - We can only use continue and break statements inside while and for loops only.
 
+---
+
 ## An Equivalent while Loop
 - We can actually use a while loop to do the same thing as a for loop.(for loops are just more concise.)
 Example: 
@@ -562,13 +564,42 @@ while i < 3:
    i = i + 1 
 print('Goodbye!')
 ```
+---
 
 ## Arguments to range()
 - Some functions can be called with multiple arguments seperated by a comma and range is one of them.
 - The range() function can be interpreted differently depending on whether you pass one, two, or three arguments.
 --> range(stop), range(start, stop), range(start, stop, step) (simialr to slicing)
 
+---
+
 ## Importing Modules
-- It is the process of bringing in code from external files(modules) to use in your current program.
-- Module: It is a python program that contains a related group of functions.
+
+### WHAT IS A MODULE?
+- A module is a Python file that contains pre-written code such as functions, variables, and classes that you can use in your program.
+Example:
+1. Random numbers --> use a module
+2. Math calculations --> use a module
+
+- It is like a toolbox-instead of writing everything from scratch, you import and use ready-made tools.
+- Each module contains a related group of functions and other code that can be reused in different programs.
+- Before using a  module, you must import it using an import statement.
+
+### IMPORT STATEMENT
+An import statement consists of:
+1. The import keyword
+2. The name of the module
+3. Optionally, multiple module names seperated by commas
+ex: import math, random
+
+### HOW TO IMPORT A MODULE
+- Basic syntax : import module_name
+Example: 
+```python
+import random   
+print(random.randit(1,10))
+```
+Output: Random number between 1 and 10
+- random = module & randit() = function inside that module
+
 
