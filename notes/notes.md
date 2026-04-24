@@ -577,11 +577,10 @@ print('Goodbye!')
 
 ### WHAT IS A MODULE?
 - A module is a Python file that contains pre-written code such as functions, variables, and classes that you can use in your program.
-Example:
+Example: For 
 1. Random numbers --> use a module
 2. Math calculations --> use a module
 
-- It is like a toolbox-instead of writing everything from scratch, you import and use ready-made tools.
 - Each module contains a related group of functions and other code that can be reused in different programs.
 - Before using a  module, you must import it using an import statement.
 
@@ -597,9 +596,20 @@ ex: import math, random
 Example: 
 ```python
 import random   
-print(random.randit(1,10))
+print(random.randint(1,10))
 ```
 Output: Random number between 1 and 10
-- random = module & randit() = function inside that module
+- random = module & randint() = function inside that module
 
+### NOTE: 
+- Instead of importing everything, use:
+```python
+from random import randint 
+print(randint(1,10))
+```
+- Now we don't need to write random again.
 
+### SIMPLE WAY TO REMEMBER
+- Module = Library
+- Import = Entering the library
+- Function = Picking a book 

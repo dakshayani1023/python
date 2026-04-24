@@ -1,5 +1,5 @@
 # ------------ Control flow with loops ------------
-"""
+
 spam = 0
 if spam < 5: 
     print("I am sleepy")
@@ -14,6 +14,7 @@ while spam < 5:
 
 
 # ----------- An annoying while loop ----------
+
 name = ""
 while name != "your name":
     print("Please type your name.")
@@ -31,6 +32,7 @@ while True: # This creates an infinite loop because the condition is always true
 print("Thank you!") # This will be executed after the loop is exited, which happens when the user types "Ellie".
 
 # ----------- continue statement ---------
+
 while True:
     print("Who are you?")
     name = input()
@@ -43,6 +45,7 @@ while True:
 print("Access granted.") # This will be executed after the loop is exited, which happens when the user types "Raya" as the name and "Falcon" as the password.
 
 # ------------ Truthy and Falsy values ------------
+
 name = ''
 while not name: # This condition will be true as long as name is an empty string or contains only whitespace characters, which are considered falsy values in Python.
     print('Enter your name:') # 
@@ -81,7 +84,7 @@ while i < 5:
     print('On this iteration, i is set to ' + str(i))
     i = i + 1 
 print('Goodbye')
-"""
+
 # ------------ Arguments to range() --------------
 
 for i in range(7, 11): 
@@ -105,3 +108,4 @@ Output:
 1
 0
 """
+
